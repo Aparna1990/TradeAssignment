@@ -1,0 +1,19 @@
+{
+    "UniqueViolation": {
+        "statusCode": 400,
+        "error": "UniqueViolation",
+        "message": "Id already exists"
+    },
+    "TradeCreation":{
+        "statusCode": 201,
+        "message": "Trade creation successful"
+    },
+    "TradeDetailsNotFound":{
+        "statusCode": 404,
+        "message": "Trade details not found"
+    },
+    "TradeDetailsNotFoundForSymbol": {
+        "statusCode": 404,
+        "message": "Trade details not found for the stock symbol"
+    }
+}

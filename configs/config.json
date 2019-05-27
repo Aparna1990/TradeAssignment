@@ -1,0 +1,17 @@
+{
+    "server":{
+        "port": 3000
+    },
+    "elastic_search":{
+        "host":"localhost",
+        "port":9200
+    },
+    "service":{
+        "trade":{
+            "share":{"min":10, "max":30},
+            "price":{"min":130.42,"max":195.65}
+        }
+    }
+
+    
+}
