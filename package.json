@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +13,10 @@
     "body-parser": "^1.19.0",
     "elasticsearch": "^16.0.0",
     "express": "^4.17.0",
+    "mocha": "^6.1.4",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.25"
+    "moment-timezone": "^0.5.25",
+    "nock": "^10.0.6",
+    "sinon": "^7.3.2"
   }
 }

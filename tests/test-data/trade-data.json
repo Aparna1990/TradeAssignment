@@ -1,0 +1,29 @@
+{
+    "TradeDetailsCreate1":{
+        "body":{
+            "id": 23,
+            "type": "buy",
+            "user": {
+                "id": 16,
+                "name": "Aparna"
+            },
+            "symbol": "symbol",
+            "shares": 20,
+            "price": 150.42
+        }
+    },
+    "TradeDetailsCreate2": {
+        "body": {
+            "id": 24,
+            "type": "buy",
+            "user": {
+                "id": 16,
+                "name": "Aparna"
+            },
+            "symbol": "symbol",
+            "shares": 20,
+            "price": 150.42
+        }
+    } 
+        
+}

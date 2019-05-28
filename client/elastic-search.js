@@ -75,7 +75,6 @@ class ElasticSearchClient {
     } 
 
     async getById(req, message) { 
-        console.log(req);
         try { 
             let res = await this.esClient.search({
                 index: message.index,
@@ -88,7 +87,6 @@ class ElasticSearchClient {
                     }
                 }
             });
-            console.log(Helper.getParseOutput(res))
             return Helper.getParseOutput(res);
         }
         catch (e) {
@@ -193,13 +191,11 @@ class ElasticSearchClient {
                     }
                 }
             });
-            console.log(res);
             res = Helper.getAggregatedOutput(res);
             res.symbol = req.params.stockSymbol;
             return res;
         }
         catch (e) { 
-            console.log("Error", e);
             throw e;
         }
     }
