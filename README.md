@@ -13,7 +13,7 @@ Refer to this [link](https://www.elastic.co/guide/en/elasticsearch/reference/cur
 **Step 2:**
 ```bash
 Start Elastic search and run the below curl for creating the index an type.
-curl - X POST "http://localhost:9200/trade/trade_info" -H 'Content-Type: application/json' -d '{"settings" : {"index" : {"number_of_shards" : 3, "number_of_replicas" : 0 }}}'
+create an index as trade and type as trade_info
 ```
 
 **Step 3:**
