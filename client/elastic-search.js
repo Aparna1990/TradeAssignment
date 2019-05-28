@@ -32,7 +32,6 @@ class ElasticSearchClient {
                 
                 });
             res = Helper.getParseOutput(res);
-            res.splice(-1, 1);
             return res;
         }
             catch (e) { 
