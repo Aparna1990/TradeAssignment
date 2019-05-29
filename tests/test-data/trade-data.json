@@ -1,29 +1,43 @@
 {
     "TradeDetailsCreate1":{
-        "body":{
             "id": 23,
             "type": "buy",
             "user": {
                 "id": 16,
-                "name": "Aparna"
+                "name": "Asd"
             },
             "symbol": "symbol",
             "shares": 20,
-            "price": 150.42
-        }
+
+            "price": 150.42,
+            "timestamp":1558865410
+        
     },
     "TradeDetailsCreate2": {
-        "body": {
             "id": 24,
-            "type": "buy",
+            "type": "sell",
             "user": {
-                "id": 16,
+                "id": 17,
                 "name": "Aparna"
             },
-            "symbol": "symbol",
-            "shares": 20,
-            "price": 150.42
-        }
-    } 
+            "symbol": "seds",
+            "shares": 23,
+            "price": 151.42,
+            "timestamp":1559132797
+        
+    },
+    "TradebyTypeSymbolQuery":
+    {
+        "params":{
+            "stockSymbol":"seds"
+                },
+    
+        "query":{
+            "type": "sell",
+            "start":"2019-05-26",
+            "end":"2019-05-29"
+             }
+    }
+    
         
 }

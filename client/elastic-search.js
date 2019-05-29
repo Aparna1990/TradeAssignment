@@ -58,14 +58,15 @@ class ElasticSearchClient {
         }
     }
 
-    async add(req, message) { 
+    async add(req, message) {
         try { 
             let res = await this.esClient.index({
                 index: message.index,
                 type: message.type,
                 body: req
             });
-            if (_.get(res, 'created')) { 
+
+            if (_.get(res, 'result') == 'created') { 
                 return [];
             }
         }

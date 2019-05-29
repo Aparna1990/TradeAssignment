@@ -27,10 +27,6 @@ class TradeManagerTest extends Helper {
     executeTests() { 
         describe('getTrade', () => {
             it.timeout = 50000;
-            beforeEach((req, res) => {
-                this.tradeManager.deleteAllTrades(req, res);
-                done();
-            });
 
             afterEach( (req, res) => {
                  this.tradeManager.deleteAllTrades(req, res);
@@ -39,9 +35,9 @@ class TradeManagerTest extends Helper {
             it('should get all trade details', async (req,res) => {
                 try {
                     req = res = {};
-                    await this.tradeDataAccessor.insert(template.TradeDetailsCreate1, res)
-                    await this.tradeDataAccessor.insert(template.TradeDetailsCreate2, res)
-                    const tradeDetails = await this.tradeManager.getAllTrades(req,res);
+                    const trade1 = await this.tradeDataAccessor.insert(template.TradeDetailsCreate1, res)
+                    const trade2 = await this.tradeDataAccessor.insert(template.TradeDetailsCreate2, res)
+                    const tradeDetails = await this.tradeManager.getAllTrades(req, res);
                     assert.equal(tradeDetails.length, 2);
                     done();
                  }

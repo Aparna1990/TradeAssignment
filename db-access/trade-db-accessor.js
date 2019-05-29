@@ -5,7 +5,7 @@ class TradeDbAccessor {
         this.elasticSearchClient = new ElasticSearchClient(configs,dependencies);
     }
    async getAll(req, res) { 
-        try {
+       try {
             let result =await this.elasticSearchClient.getAll(Constants.ElasticSearch.Trade);
             return result;
          }
